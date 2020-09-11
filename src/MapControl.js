@@ -7,7 +7,7 @@ import Checkbox from "@material-ui/core/Checkbox";
 
 const ControlWrapper = styled.div`
   position: absolute;
-  top: 100px;
+  bottom: 30px;
   right: 10px;
   border-radius: 3px;
   background: white;

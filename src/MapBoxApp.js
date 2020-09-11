@@ -2,14 +2,14 @@ import React from "react";
 import ReactMapboxGl, { MapContext } from "react-mapbox-gl";
 import { MapControl } from "./MapControl";
 import {
-  MAPBOX_ACCESS_KEY,
+  TOM_MAPBOX_ACCESS_KEY,
   STYLE_URL,
   MAPBOX_MAP_CENTER,
   LAYERS,
 } from "./constants";
 
 const Map = ReactMapboxGl({
-  accessToken: MAPBOX_ACCESS_KEY,
+  accessToken: TOM_MAPBOX_ACCESS_KEY,
 });
 
 const defaultState = LAYERS.reduce(
