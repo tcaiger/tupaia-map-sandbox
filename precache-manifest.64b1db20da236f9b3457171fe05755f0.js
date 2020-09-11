@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff37280870634f3f3f22502b9bd6045f",
+    "revision": "f48a0631d3f757cdd0e7d6d8886ecbf8",
     "url": "/tupaia-map-sandbox/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tupaia-map-sandbox/static/js/2.7cf98a11.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "28e8a90a52f835564789",
-    "url": "/tupaia-map-sandbox/static/js/main.7a92dd4e.chunk.js"
+    "revision": "5bba72ce4adf31f00fee",
+    "url": "/tupaia-map-sandbox/static/js/main.c3b0896a.chunk.js"
   },
   {
     "revision": "79152c6d176b8e076027",
