@@ -38,11 +38,15 @@ export const App = () => {
   const [state, setState] = React.useState(defaultState);
 
   const handleChange = (layer, checked) => {
-    setState({ ...state, [layer]: checked });
     const map = mapboxLayer.current.mapbox.getMapboxMap();
 
-    const newVisibility = checked ? "visible" : "none";
+    if (!map) {
+      return;
+    }
 
+    setState({ ...state, [layer]: checked });
+
+    const newVisibility = checked ? "visible" : "none";
     const activeLayer = LAYERS.find((l) => l.name === layer);
 
     if ("layerNames" in activeLayer) {
@@ -88,18 +92,7 @@ export const App = () => {
         <BaseLayer name="terrain">
           <MapBoxGLLayer accessToken={GERRY_ACCESS_KEY} style={TERRAIN_STYLE} />
         </BaseLayer>
-        <BaseLayer name="project">
-          <MapBoxGLLayer
-            accessToken={TOM_MAPBOX_ACCESS_KEY}
-            style={STYLE_URL}
-          />
-          {/* Todo: only show controls when this layer is shown*/}
-          <MapControl
-            controls={LAYERS}
-            values={state}
-            onChange={handleChange}
-          />
-        </BaseLayer>
+        <MapControl controls={LAYERS} values={state} onChange={handleChange} />
       </LayersControl>
     </StyledMap>
   );
