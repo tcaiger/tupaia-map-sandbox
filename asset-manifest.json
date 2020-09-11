@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/tupaia-map-sandbox/static/js/main.7a92dd4e.chunk.js",
+    "main.js.map": "/tupaia-map-sandbox/static/js/main.7a92dd4e.chunk.js.map",
+    "runtime-main.js": "/tupaia-map-sandbox/static/js/runtime-main.72b9ba2b.js",
+    "runtime-main.js.map": "/tupaia-map-sandbox/static/js/runtime-main.72b9ba2b.js.map",
+    "static/js/2.7cf98a11.chunk.js": "/tupaia-map-sandbox/static/js/2.7cf98a11.chunk.js",
+    "static/js/2.7cf98a11.chunk.js.map": "/tupaia-map-sandbox/static/js/2.7cf98a11.chunk.js.map",
+    "index.html": "/tupaia-map-sandbox/index.html",
+    "precache-manifest.29b7728a29b48adcceaa76d154282090.js": "/tupaia-map-sandbox/precache-manifest.29b7728a29b48adcceaa76d154282090.js",
+    "service-worker.js": "/tupaia-map-sandbox/service-worker.js",
+    "static/js/2.7cf98a11.chunk.js.LICENSE.txt": "/tupaia-map-sandbox/static/js/2.7cf98a11.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72b9ba2b.js",
+    "static/js/2.7cf98a11.chunk.js",
+    "static/js/main.7a92dd4e.chunk.js"
+  ]
+}
