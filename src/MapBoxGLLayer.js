@@ -5,9 +5,27 @@ import { GridLayer, withLeaflet } from "react-leaflet";
 
 class MapBoxGLLayerComponent extends GridLayer {
   createLeafletElement(props) {
-    const map = L.mapboxGL(props);
+    const { onMouseover, ...rest } = props;
+    const map = L.mapboxGL(rest);
     this.mapbox = map;
+
+    if (onMouseover) {
+      this.onMouseover = onMouseover;
+    }
+
     return map;
+  }
+
+  componentDidMount() {
+    super.componentDidMount();
+
+    const mapboxMap = this.mapbox.getMapboxMap();
+
+    if (mapboxMap) {
+      mapboxMap.on("load", () => {
+        this.onMouseover(mapboxMap);
+      });
+    }
   }
 }
 
