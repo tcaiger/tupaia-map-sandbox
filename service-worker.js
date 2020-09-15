@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tupaia-map-sandbox/precache-manifest.64b1db20da236f9b3457171fe05755f0.js"
+  "/tupaia-map-sandbox/precache-manifest.54624e90d10340376d322c1570d02b35.js"
 );
 
 self.addEventListener('message', (event) => {
