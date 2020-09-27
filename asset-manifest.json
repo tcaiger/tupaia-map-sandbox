@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/tupaia-map-sandbox/static/js/main.1199f583.chunk.js",
-    "main.js.map": "/tupaia-map-sandbox/static/js/main.1199f583.chunk.js.map",
+    "main.js": "/tupaia-map-sandbox/static/js/main.777e403d.chunk.js",
+    "main.js.map": "/tupaia-map-sandbox/static/js/main.777e403d.chunk.js.map",
     "runtime-main.js": "/tupaia-map-sandbox/static/js/runtime-main.72b9ba2b.js",
     "runtime-main.js.map": "/tupaia-map-sandbox/static/js/runtime-main.72b9ba2b.js.map",
-    "static/js/2.a8dbabdd.chunk.js": "/tupaia-map-sandbox/static/js/2.a8dbabdd.chunk.js",
-    "static/js/2.a8dbabdd.chunk.js.map": "/tupaia-map-sandbox/static/js/2.a8dbabdd.chunk.js.map",
+    "static/js/2.5fc942e4.chunk.js": "/tupaia-map-sandbox/static/js/2.5fc942e4.chunk.js",
+    "static/js/2.5fc942e4.chunk.js.map": "/tupaia-map-sandbox/static/js/2.5fc942e4.chunk.js.map",
     "index.html": "/tupaia-map-sandbox/index.html",
-    "precache-manifest.54624e90d10340376d322c1570d02b35.js": "/tupaia-map-sandbox/precache-manifest.54624e90d10340376d322c1570d02b35.js",
+    "precache-manifest.693b25c4d49eebee9be89f6fa5195642.js": "/tupaia-map-sandbox/precache-manifest.693b25c4d49eebee9be89f6fa5195642.js",
     "service-worker.js": "/tupaia-map-sandbox/service-worker.js",
-    "static/js/2.a8dbabdd.chunk.js.LICENSE.txt": "/tupaia-map-sandbox/static/js/2.a8dbabdd.chunk.js.LICENSE.txt"
+    "static/js/2.5fc942e4.chunk.js.LICENSE.txt": "/tupaia-map-sandbox/static/js/2.5fc942e4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.72b9ba2b.js",
-    "static/js/2.a8dbabdd.chunk.js",
-    "static/js/main.1199f583.chunk.js"
+    "static/js/2.5fc942e4.chunk.js",
+    "static/js/main.777e403d.chunk.js"
   ]
 }
