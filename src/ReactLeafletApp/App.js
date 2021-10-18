@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Map, LayersControl, TileLayer, Popup } from "react-leaflet";
 import { MapControl } from "./MapControl";
-import { MapBoxGLLayer } from "./MapBoxGLLayer";
+import { MapBoxGLLayer } from "../MapboxGLApp/MapBoxGLLayer";
 import {
   LAYERS,
   TOM_MAPBOX_ACCESS_KEY,
@@ -18,7 +18,7 @@ import {
   WATERWAYS_ROADS_STYLE,
   TERRAIN_STYLE,
   ATTRIBUTION,
-} from "./constants";
+} from "../constants";
 const { BaseLayer } = LayersControl;
 
 const StyledMap = styled(Map)`

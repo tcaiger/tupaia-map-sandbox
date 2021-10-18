@@ -1,12 +1,12 @@
 import React from "react";
 import ReactMapboxGl, { MapContext } from "react-mapbox-gl";
-import { MapControl } from "./MapControl";
+import { MapControl } from "../ReactLeafletApp/MapControl";
 import {
   TOM_MAPBOX_ACCESS_KEY,
   STYLE_URL,
   MAPBOX_MAP_CENTER,
   LAYERS,
-} from "./constants";
+} from "../constants";
 
 const Map = ReactMapboxGl({
   accessToken: TOM_MAPBOX_ACCESS_KEY,
