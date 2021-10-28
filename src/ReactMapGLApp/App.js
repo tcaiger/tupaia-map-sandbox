@@ -1,9 +1,10 @@
-import * as React from "react";
+import React, { useRef, useEffect } from "react";
 import styled from "styled-components";
 import { useState } from "react";
 import ReactMapGL from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { MAPBOX_TOKEN, WATERWAYS_STYLE } from "../constants";
+import MapboxLanguage from "@mapbox/mapbox-gl-language";
 
 const Container = styled.div`
   margin: 2rem;
@@ -17,17 +18,48 @@ export const App = () => {
   const [viewport, setViewport] = useState({
     height: "100%",
     width: "100%",
-    latitude: 37.7577,
-    longitude: -122.4376,
+    latitude: 19.8563,
+    longitude: 102.4955,
     zoom: 8,
   });
+
+  const mapRef = useRef();
+
+  useEffect(() => {
+    if (mapRef && mapRef.current) {
+      const map = mapRef.current.getMap();
+      map.on("load", () => {
+        const layers = map.getStyle().layers;
+        console.log("map", layers);
+        map.setLayoutProperty("country-label", "text-field", [
+          "format",
+          ["get", "name"],
+        ]);
+
+        map.setLayoutProperty("state-label", "text-field", [
+          "format",
+          ["get", "name"],
+        ]);
+
+        map.setLayoutProperty("settlement-label", "text-field", [
+          "format",
+          ["get", "name"],
+        ]);
+
+        map.setLayoutProperty("settlement-subdivision-label", "text-field", [
+          "format",
+          ["get", "name"],
+        ]);
+      });
+    }
+  }, [mapRef]);
 
   return (
     <Container>
       <ReactMapGL
         {...viewport}
-        mapStyle="mapbox://styles/sussol/cj4s0gpc0865p2rpc2rry31jl"
-        // mapStyle="mapbox://styles/mapbox/streets-v9"
+        ref={mapRef}
+        mapStyle="mapbox://styles/mapbox/streets-v11"
         mapboxApiAccessToken={MAPBOX_TOKEN}
         onViewportChange={(nextViewport) => setViewport(nextViewport)}
       />
